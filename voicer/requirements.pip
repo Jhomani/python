@@ -1,0 +1,10 @@
+mysql-connector-python
+SpeechRecognition
+pyaudio
+pynput
+pysimplegui
+
+# os requirement
+sudo pacman -Sy python-xlib
+sudo pacman -Sy python-evdev
+sudo pacman -Sy tk

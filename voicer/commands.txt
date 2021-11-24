@@ -1,0 +1,3 @@
+<action> [id] <num | value> tabla <table>
+<action> [id] <num | value> tabla <table>
+<action> <camp> <to> <newValue> <of> tabla <table> [id] <num | value>
