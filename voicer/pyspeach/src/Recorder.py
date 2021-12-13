@@ -7,7 +7,7 @@ class Recorder:
   thr: Thread
   audio: pyaudio.PyAudio
   stream: pyaudio.Stream
-  frames: list[bytes]
+  frames = []
   fpath: str
 
   def __start(self):

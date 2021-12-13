@@ -6,7 +6,7 @@ from pyspeach.src.utils import formatResDict
 class ConnectSQL:
   __connection: MySQLConnection
   __cursor: MySQLCursor
-  __creadentials: dict[str, str]
+  __creadentials = {}
 
   def __init__(self, user: str, pss: str, db: str):
     self.__creadentials = {

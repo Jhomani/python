@@ -1,8 +1,8 @@
 mysql-connector-python
 SpeechRecognition
 pyaudio
+wave
 pynput
-pysimplegui
 
 # os requirement
 sudo pacman -Sy python-xlib

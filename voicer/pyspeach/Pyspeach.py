@@ -5,7 +5,7 @@ class Pyspeach:
   __FILENAME: str
   _recorder: Recorder
   _sql: ConnectSQL
-  _dicionary: dict[str, str]
+  _dicionary = {}
 
   def __init__(self) -> None:
     self.__FILENAME = '/tmp/recorded.wav'
@@ -24,7 +24,7 @@ class Pyspeach:
   def startSpeech(self):
     self._recorder.startRecord()
 
-  def stopSpeech(self)-> dict[str]:
+  def stopSpeech(self):
     self._recorder.stopRecord(self.__FILENAME)
 
     rec = sr.Recognizer()

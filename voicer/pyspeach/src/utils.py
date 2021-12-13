@@ -3,8 +3,8 @@ import wave
 import os
 import pyaudio
 
-def formatResDict(attr: tuple[str], val: tuple) -> dict:
-  res: dict[str] = {}
+def formatResDict(attr, val: tuple) -> dict:
+  res = {}
   size = len(attr)
 
   for i in range(size):
@@ -12,7 +12,7 @@ def formatResDict(attr: tuple[str], val: tuple) -> dict:
 
   return res
 
-def formatResList(attr: tuple, val: list[tuple]) -> list[dict]:
+def formatResList(attr: tuple, val):
   res = []
 
   for i in val:

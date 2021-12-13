@@ -3,7 +3,9 @@ import json
 import tkinter as tk
 from threading import Thread
 from pynput.keyboard import Listener
-from pyspeach import Pyspeach
+
+from pyspeach.Pyspeach import Pyspeach
+
 
 def showUI(model:str):
   root = tk.Tk()
@@ -36,7 +38,7 @@ def onRelease(key):
         thr.start()
 
     elif key.char ==  'q':
-      model = test.runCommand('/home/jhomani/Projects/python/voicer/test.wav')
+      model = test.runCommand('/home/jhomani/python/voicer/test.wav')
       if model and not isinstance(model, bool):
         thr = Thread(target=showUI, args=(model,))
         thr.start()
